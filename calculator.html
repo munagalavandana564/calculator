@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    
+
+body{
+color: red(238, 106, 201);
+text-align:center;
+background-size: cover;
+background-image: url(CAL.jpg);
+padding:150px;
+font-size: 20px;
+ }
+table{
+    margin-center: 300px;
+    text-align: center;
+    font-size: 30px;
+}
+input{
+    margin: 20px;
+    height: 40px;
+    width: 180px;
+    font-size: 10px;
+
+}
+button{
+    color:black;
+    background-color:palevioletred;
+    width: 50px;
+    height: 50px;
+}
+button:hover{
+    background-color: rgb(230, 247, 105);
+}
+
+
+h1{
+text-align:center;
+}
+
+.calculator{
+ text-align:center;
+ align-content:center;
+
+}
+
+    
+</style>
+<body>
+    <h1>CALCULATOR</h1>
+    <center>
+    
+    <div class="calculator">
+        </div>
+     <input type="text" id="result" readonly>
+     <table>
+        <tr>
+            <td><button onclick ="appendNumber(7)">7</button></td>
+            <td><button onclick ="appendNumber(8)">8</button></td>
+            <td><button onclick ="appendNumber(9)">9</button></td>
+            <td><button onclick ="setOperator('+')">+</button></td>
+        </tr>
+        <tr>
+            <td><button onclick ="appendNumber(4)">4</button></td>
+            <td><button onclick ="appendNumber(5)">5</button></td>
+            <td><button onclick ="appendNumber(6)">6</button></td>
+            <td><button onclick ="setOperator('-')">-</button></td>
+        </tr>
+        <tr>
+            <td><button onclick ="appendNumber(1)">1</button></td>
+            <td><button onclick ="appendNumber(2)">2</button></td>
+            <td><button onclick ="appendNumber(3)">3</button></td>
+            <td><button onclick ="setOperator('*')">*</button></td>
+        </tr>
+        <tr>
+            <td><button onclick ="appendNumber(0)">0</button></td>
+            <td><button onclick ="clearResult('c')">c</button></td>
+            <td><button onclick ="calculate('=')">=</button></td>
+            <td><button onclick ="setOperator('/')">/</button></td>
+      
+        </tr>
+    </table>
+    </center>
+    </div>
+    <script src="cal.js"></script>
+</body>
+</html>
